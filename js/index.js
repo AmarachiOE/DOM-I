@@ -63,3 +63,19 @@ navItems.forEach( function (currentValue) {
   currentValue.style.color= 'green';
 });
 //navItems[0].style.color = 'green'; for individual customization
+
+//Create 2 New Navigation Items
+const firstNavItem = document.createElement('a');
+firstNavItem.href = '#';
+firstNavItem.textContent = 'First';
+firstNavItem.style.color = 'green';
+
+const lastNavItem = document.createElement('a');
+lastNavItem.href = '#';
+lastNavItem.textContent = 'Last';
+lastNavItem.style.color = 'green';
+
+//Create DOM node for 'nav' section to prepend and append new child items
+const navigation = document.querySelector('nav'); //selects the first 'nav' selector in html file
+navigation.appendChild(lastNavItem);
+navigation.prepend(firstNavItem);
