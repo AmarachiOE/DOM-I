@@ -79,3 +79,11 @@ lastNavItem.style.color = 'green';
 const navigation = document.querySelector('nav'); //selects the first 'nav' selector in html file
 navigation.appendChild(lastNavItem);
 navigation.prepend(firstNavItem);
+
+
+//Call to Action Text and Button
+const bigText = document.querySelector('h1');
+bigText.textContent = 'DOM IS AWESOME';
+
+const ctaBtn = document.querySelector('button');
+ctaBtn.textContent = 'Get Started';
