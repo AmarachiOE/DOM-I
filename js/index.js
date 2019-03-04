@@ -81,12 +81,18 @@ navigation.appendChild(lastNavItem);
 navigation.prepend(firstNavItem);
 
 
-// Call to Action Text and Button
+// CALL TO ACTION TEXT AND BUTTON
+//const ctaSection = document.querySelector('.cta');
+//ctaSection.style.display = 'flex';
+//ctaSection.style.justifyContent = 'center'; 
+
 const bigText = document.querySelector('h1');
-bigText.textContent = 'DOM IS AWESOME';
+bigText.innerHTML = 'DOM <br>IS <br> AWESOME';
 
 const ctaBtn = document.querySelector('button');
 ctaBtn.textContent = 'Get Started';
+
+
 
 
 // CONTENT TEXT
@@ -97,6 +103,7 @@ mainContentHeaders[2].textContent = 'SERVICES';
 mainContentHeaders[3].textContent = 'PRODUCT';
 mainContentHeaders[4].textContent = 'VISION';
 mainContentHeaders[5].textContent = 'CONTACT'
+mainContentHeaders[5].style.color = 'blue'
 
 const mainContentParagraph = document.querySelectorAll('p');
 mainContentParagraph[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
@@ -104,7 +111,10 @@ mainContentParagraph[1].textContent = 'About content elementum magna eros, ac po
 mainContentParagraph[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 mainContentParagraph[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 mainContentParagraph[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-mainContentParagraph[5].textContent = '123 Way 456 Street, Somewhere, USA';
+mainContentParagraph[5].innerHTML = '123 Way 456 Street,<br> Somewhere, USA';
 mainContentParagraph[6].textContent = '1 (888) 888-8888';
 mainContentParagraph[7].textContent = 'sales@greatidea.io';
-mainContentParagraph[8].textContent = 'Copyright Great Idea! 2018';
+mainContentParagraph[5].style.color = 'blue';
+mainContentParagraph[6].style.color = 'blue';
+mainContentParagraph[7].style.color = 'blue';
+mainContentParagraph[8].style.color = 'blue';
